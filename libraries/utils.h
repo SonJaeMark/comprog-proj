@@ -15,3 +15,4 @@ void currentDateGetterStr(char dateInStr[STR_MIN_SIZE]);
 void currentDateGetterInt(char dateInStr[STR_MIN_SIZE], int *date);
 int strMonthToInt(char month[STR_MAX_SIZE]);
 void csvFormatter(char listOfString[STR_MIN_SIZE][STR_MIN_SIZE], char csvFormattedStr[STR_MAX_SIZE], int arrSize);
+int generateId();

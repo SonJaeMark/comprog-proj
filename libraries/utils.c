@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <time.h>
+#include <unistd.h>
 
 #include "utils.h"
 
@@ -159,4 +160,22 @@ void csvFormatter(char listOfString[STR_MIN_SIZE][STR_MIN_SIZE], char csvFormatt
         strcat(csvFormattedStr, listOfString[i]);
         if(i < arrSize-1) strcat(csvFormattedStr, delim);
     }
+}
+
+int generateId(){
+
+    FILE *file;
+    char filename[] = "db/secrete_password.txt";
+    if(access(filename, F_OK)!=0){
+        file = fopen(filename, "w");
+        fprintf(file, "%d", 240000);
+        fclose(file);
+
+        return 240000;
+    }
+
+    file = fopen(filename, "w");
+
+
+
 }
