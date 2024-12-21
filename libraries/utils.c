@@ -110,7 +110,7 @@ void currentDateGetterStr(char dateInStr[STR_MIN_SIZE]){
 void currentDateGetterInt(char dateInStr[STR_MIN_SIZE], int *date){
     
     char dateInStrBuff[STR_MIN_SIZE];
-    char splitedDate[STR_MIN_SIZE][STR_MIN_SIZE ];
+    char splitedDate[STR_MAX_SIZE][STR_MAX_SIZE ];
     char delim[STR_MIN_SIZE] = " ";
 
     // see line 88
