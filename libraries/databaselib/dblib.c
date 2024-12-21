@@ -83,6 +83,7 @@ void getUserPasswordById(char *id, char *passwordFromDb, bool isTeacher){
         file = fopen(STUDENT_FILE, "r");
     }
    
-
+   
+    fclose(file);
 
 }
